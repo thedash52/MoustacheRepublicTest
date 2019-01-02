@@ -1,0 +1,20 @@
+{
+  "name": "moustacherepublictest",
+  "version": "1.0.0",
+  "description": "Test project for Moustache Republic",
+  "main": "index.html",
+  "scripts": {
+    "debug": "sass --watch scss:css",
+    "build": "sass scss:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thedash52/MoustacheRepublicTest.git"
+  },
+  "author": "Daniel Nash",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thedash52/MoustacheRepublicTest/issues"
+  },
+  "homepage": "https://github.com/thedash52/MoustacheRepublicTest#readme"
+}
