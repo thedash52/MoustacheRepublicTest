@@ -5,16 +5,65 @@ body {
     font-size: 0.8em;
 
     #header {
-        $padding: 0.3em;
         $margin: 1em;
 
         background: $navBack;
-        padding-top: $padding;
-        padding-bottom: $padding;
         margin-top: $margin;
         margin-bottom: $margin;
         font-size: 0.95em;
         text-align: center;
+
+        #dropdown-container {
+            $padding: 0.3em;
+
+            cursor: pointer;
+            padding-top: $padding;
+            padding-bottom: $padding;
+
+            .dropdown-menu {
+                border-color: $borderLight;
+                border-radius: 0;
+                border-top: 0;
+                padding: 1em;
+                width: 17em;
+
+                #border-top {
+                    border-top: solid 1px $borderLight;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 30%;
+                }
+
+                .cart-contents {
+                    font-size: 0.85em;
+                    color: $boldColor;
+
+                    #prodSmall {
+                        padding-bottom: 0.5em;
+                    }
+
+                    #prodMedium {
+                        padding-top: 0.5em;
+                        padding-bottom: 0.5em;
+                    }
+
+                    #prodLarge {
+                        padding-top: 0.5em;
+                    }
+
+                    .cart-details {
+                        margin-bottom: 1.5em;
+                    }
+                }
+            }
+        }
+
+        .active-cart {
+            background: #fff;
+            border: solid 1px $borderLight;
+            border-bottom: 0;
+        }
     }
 
     .prod-details {
@@ -39,6 +88,10 @@ body {
 
             .required-star {
                 color: $starColor;
+            }
+
+            #selectSize {
+                color: $boldColor;
             }
         }
 
@@ -73,7 +126,7 @@ body {
             border: solid $borderDark;
             margin-left: 1.2em;
             color: $boldColor;
-            animation: 500ms ease-in-out;
+            transition: 200ms ease-in-out;
             cursor: pointer;
 
             h4 {
@@ -85,6 +138,7 @@ body {
             &:hover {
                 background: $boldColor;
                 color: #fff;
+                transition: 200ms ease-in-out;
             }
         }
 
