@@ -1,0 +1,79 @@
+body {
+  color: #888;
+  font-size: 0.8em;
+}
+body #header {
+  background: #F6F6F7;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-size: 0.95em;
+  text-align: center;
+}
+body .prod-details {
+  margin-top: 2.5em;
+}
+body .prod-details h1 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: #222;
+}
+body .prod-details h2 {
+  font-size: 0.85rem;
+  font-weight: bolder;
+  color: #222;
+}
+body .prod-details h3 {
+  font-size: 0.75rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+body .prod-details h3 .required-star {
+  color: #C90000;
+}
+body .prod-details .prod-image {
+  width: 90%;
+}
+body .prod-details .size-row {
+  margin-left: 0.1em;
+  margin-top: 0.4em;
+}
+body .prod-details .size-selection {
+  border: solid 2px #CCC;
+  padding-top: 0.6em;
+  padding-bottom: 0.8em;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-right: 0.5em;
+  min-width: 0.2em;
+  cursor: pointer;
+}
+body .prod-details .size-selection p {
+  margin: 0;
+  width: 1em;
+  text-align: center;
+  font-weight: bold;
+}
+body .prod-details .add-to-cart {
+  border: solid #222;
+  margin-left: 1.2em;
+  color: #222;
+  animation: 500ms ease-in-out;
+  cursor: pointer;
+}
+body .prod-details .add-to-cart h4 {
+  font-size: 1.2rem;
+  padding-top: 0.3em;
+  text-align: center;
+}
+body .prod-details .add-to-cart:hover {
+  background: #222;
+  color: #fff;
+}
+body .prod-details .active-size {
+  border: solid 2px #222;
+  color: #222;
+}
+
+/*# sourceMappingURL=main.css.map */

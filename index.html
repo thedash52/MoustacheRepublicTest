@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Test project for Moustache Republic">
+    <meta name="author" content="Daniel Nash">
+
+    <title>Mustache Republic Test</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header" class="container-fluid">
+        <div class="row justify-content-end">
+            <div class="col-1">
+                My Cart <span id="cartNum">(0)</span>
+            </div>
+
+            <div class="col-1"></div>
+        </div>
+    </div>
+
+    <div class="container prod-details">
+        <div class="row">
+            <div class="col-5 offset-1">
+                <img src="images/classic-tee.jpg" class="img-fluid">
+            </div>
+
+            <div class="col-5 offset-1">
+                <div class="row py-2">
+                    <div class="col">
+                        <h1>Classic Tee</h1>
+                    </div>
+                </div>
+
+                <div class="row py-2">
+                    <div class="col">
+                        <h2>$75.00</h2>
+                    </div>
+                </div>
+
+                <div class="row py-2">
+                    <div class="col">
+                        <p>Vestibulum gravida eros nec viverra imperdiet. Nullam accumsan, dui eget ultrices euismod, lectus metus iaculis nulla, ac condimentum nunc urna a nibh. Integer eget metus nibh. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <h3>SIZE<span class="required-star">*</span> <span id="selectSize"></span></h3>
+                    </div>
+                </div>
+
+                <div class="row size-row">
+                    <input type="hidden" id="selectedSize">
+
+                    <div class="col-auto size-selection" data-size="s">
+                        <p>S</p>
+                    </div>
+
+                    <div class="col-auto size-selection" data-size="m">
+                        <p>M</p>
+                    </div>
+
+                    <div class="col-auto size-selection" data-size="l">
+                        <p>L</p>
+                    </div>
+                </div>
+
+                <div class="row py-3">
+                    <div id="addProd" class="col-auto add-to-cart">
+                        <h4>ADD TO CART</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

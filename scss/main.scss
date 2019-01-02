@@ -1,0 +1,96 @@
+@import 'defaultSettings';
+
+body {
+    color: $normColor;
+    font-size: 0.8em;
+
+    #header {
+        $padding: 0.3em;
+        $margin: 1em;
+
+        background: $navBack;
+        padding-top: $padding;
+        padding-bottom: $padding;
+        margin-top: $margin;
+        margin-bottom: $margin;
+        font-size: 0.95em;
+        text-align: center;
+    }
+
+    .prod-details {
+        margin-top: 2.5em;
+
+        h1 {
+            font-size: 1.5rem;
+            font-weight: normal;
+            color: $boldColor;
+        }
+
+        h2 {
+            font-size: 0.85rem;
+            font-weight: bolder;
+            color: $boldColor;
+        }
+
+        h3 {
+            font-size: 0.75rem;
+            font-weight: bolder;
+            text-transform: uppercase;
+
+            .required-star {
+                color: $starColor;
+            }
+        }
+
+        .prod-image {
+            width: 90%;
+        }
+
+        .size-row {
+            margin-left: 0.1em;
+            margin-top: 0.4em;
+        }
+
+        .size-selection {
+            border: solid 2px $borderLight;
+            padding-top: 0.6em;
+            padding-bottom: 0.8em;
+            padding-left: 1em;
+            padding-right: 1em;
+            margin-right: 0.5em;
+            min-width: 0.2em;
+            cursor: pointer;
+
+            p {
+                margin: 0;
+                width: 1em;
+                text-align: center;
+                font-weight: bold;
+            }
+        }
+
+        .add-to-cart {
+            border: solid $borderDark;
+            margin-left: 1.2em;
+            color: $boldColor;
+            animation: 500ms ease-in-out;
+            cursor: pointer;
+
+            h4 {
+                font-size: 1.2rem;
+                padding-top: 0.3em;
+                text-align: center;
+            }
+
+            &:hover {
+                background: $boldColor;
+                color: #fff;
+            }
+        }
+
+        .active-size {
+            border: solid 2px $borderDark;
+            color: $boldColor;
+        }
+    }
+}
